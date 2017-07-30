@@ -1,12 +1,11 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 from django.shortcuts import render
 from django.http import HttpResponse
-from apps.billeteras.poloniex import poloniex
+from .poloniex import poloniex
+
 
 # Create your views here.
-
-
-#valor= raw_input('amo voy a traerte todo el historial de trading de un moneda... por favor no me grites y dime cual par quieres?: ')
-
 prueba = poloniex('PBU6QU8V-CET88BVI-VOOIHFDT-5CNMC7PR','34ebbae8bf11a4c759d606ce86674eac901f1f6293c14a1014abf437b33cb14e2a3a535fa84e98e83415e4870a49cb0e505cac1dbfdd8b98f2be090441021681c')
 #print prueba.bar()
 ticker = prueba.returnTicker()
