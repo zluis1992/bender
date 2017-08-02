@@ -1,8 +1,11 @@
+{% load staticfiles %}
+<!--plantilla usada en el proyecto https://bootswatch.com/flatly/-->
 <!DOCTYPE html>
 <html lang="es-co">
 <head>
 <meta charset="utf-8">
 	<title>{% block title %} Bender {% endblock %}</title>
+	<link rel = "stylesheet"  type="text/css"  href="{% static 'css/bootstrap.css' %}">
 </head>
 <body>
 {% block header %}
@@ -13,6 +16,8 @@
 	<h5>quieres tener mas dinero?, pues muerete jajaja</h5>
 {% endblock%}
 
+<script src = "https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src = "{% static 'js/bootstrap.min.js' %}"></script>
 {% block footer%}
 	<p>no robar</p>
 {% endblock %}
