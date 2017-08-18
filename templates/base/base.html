@@ -8,18 +8,40 @@
 	<link rel = "stylesheet"  type="text/css"  href="{% static 'css/bootstrap.css' %}">
 </head>
 <body>
-{% block header %}
-	<h4>este es un titulo base, besa mi brillante trasero</h4>
+
+{% block navbar %}
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bender</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Trading<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Monedas</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
 {% endblock %}
 
 {% block content %}
-	<h5>quieres tener mas dinero?, pues muerete jajaja</h5>
-{% endblock%}
+
+{% endblock %}
+
 
 <script src = "https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src = "{% static 'js/bootstrap.min.js' %}"></script>
 {% block footer%}
-	<p>no robar</p>
+	<div class="panel-footer">No robar</div>
 {% endblock %}
 
 

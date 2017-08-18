@@ -1,1 +1,70 @@
-    {% extends 'base/base.html'%}
+{% extends 'base/base.html'%}
+
+{% block content %}
+<h1>Señales</h1>
+<div class="container">
+<form class="form-horizontal">
+    <fieldset>
+        <div class="row">
+        <div class="form-group col-md-2">
+            <label for="select" class="control-label">Moneda</label>
+            <div class="">
+                <select class="form-control" id="select">
+                    <option>1</option>
+                </select>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="form-group col-md-3">
+            <label class="control-label">Entrada 1</label>
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" id="entrada1">
+            </div>
+        </div>
+        <div class="form-group col-md-3">
+          <label class="control-label">Entrada 2</label>
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" id="entrada2">
+          </div>
+        </div>
+        </div>
+
+
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label class="control-label">Salida 1</label>
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control" id="salida1">
+                </div>
+            </div>
+
+        <div class="form-group col-md-3">
+          <label class="control-label">Salida 2</label>
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" id="salida2">
+          </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group has-warning col-md-2">
+          <label class="control-label" for="stoploss">StopLoss</label>
+          <input type="text" class="form-control" id="stoploss">
+        </div>
+        </div>
+
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Ejecutar Señal</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+    </div>
+{% endblock %}
